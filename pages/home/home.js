@@ -5,7 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
+      name:"cyys",
+      age: 15,
+      students:[
+        { id: 110, name: 'star'},
+        { id: 111, name: 'star-l'},
+        { id:112, name:'star-load'}
+        ],
+        counter:0
+  },
 
+  handleBtnClick(){
+    this.setData({
+      counter: this.data.counter + 1
+    })
+  },
+  handleSubtraction(){
+    this.setData({
+      counter: this.data.counter -1
+    })
   },
 
   /**

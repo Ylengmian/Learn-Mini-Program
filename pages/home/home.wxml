@@ -1,5 +1,14 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!--小程序的数据绑定-->
+<view>{{name}}</view>
+<view>年龄：{{age}}</view>
+<view>----------------------------------------------</view>
 
+<!--列表循环遍历 wx-for -->
+<view wx:for="{{students}}">{{item.id}}--{{item.name}}</view>
 
-<text>知识点1</text>
+<view>----------------------------------------------</view>
+
+<!--响应式编写-->
+<view>当前计数：{{counter}}</view>
+<button bindtap="handleBtnClick">+</button>
+<button bindtap="handleSubtraction">-</button>
